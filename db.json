@@ -1,0 +1,21 @@
+{
+    "items": [
+      {
+        "id": "MLA1",
+        "title": "Producto simulado 1",
+        "price": { "currency": "COP", "amount": 1000, "decimals": 0 },
+        "picture": "/images/mock-product-1.jpg",
+        "condition": "new",
+        "free_shipping": true
+      },
+      {
+        "id": "MLA2",
+        "title": "Producto simulado 2",
+        "price": { "currency": "COP", "amount": 2000, "decimals": 0 },
+        "picture": "/images/mock-product-2.jpg",
+        "condition": "used",
+        "free_shipping": false
+      }
+    ]
+  }
+  

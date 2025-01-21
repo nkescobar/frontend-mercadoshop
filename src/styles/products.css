@@ -1,0 +1,23 @@
+.products-container {
+    padding: 20px;
+  }
+  
+  .products-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .products-container li {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .products-container img {
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
