@@ -10,6 +10,7 @@ import '@/styles/home.css';
 export default function HomePage() {
   const [products, setProducts] = useState<Product[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+  const [currentPage, setCurrentPage] = useState(0);
 
   useEffect(() => {
     fetchProducts().then((data) => {
@@ -19,10 +20,10 @@ export default function HomePage() {
   }, []);
 
   const handleSearch = (query: string) => {
-    console.log('query ---', query)
+    setCurrentPage(0);  // Reiniciar la paginación al realizar la búsqueda
+
     if (query.trim() === '') {
-      // Si el input está vacío, mostrar todos los productos
-      setFilteredProducts(products);
+      setFilteredProducts(products); // Mostrar todos los productos si el input está vacío
       return;
     }
 
@@ -38,12 +39,16 @@ export default function HomePage() {
 
   return (
     <div className="home-container">
-      <Header onSearch={handleSearch} />
+      <Header products={products} onSearch={handleSearch} />
       <h2 className="main-title">Bienvenido a Mercado Search</h2>
       <p className="main-text">
         Encuentra los mejores productos con nuestra búsqueda fácil y rápida.
       </p>
-      <ProductList products={filteredProducts} />
+      <ProductList 
+        products={filteredProducts} 
+        currentPage={currentPage} 
+        setCurrentPage={setCurrentPage} 
+      />
     </div>
   );
 }

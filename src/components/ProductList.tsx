@@ -1,13 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { Product } from '@/shared/types/product';
 import '@/styles/products.css';
 
-export default function ProductList({ products = [] }: { products?: Product[] }) {
-  const [pageNumber, setPageNumber] = useState(0);
+
+export default function ProductList({ products = [], currentPage, setCurrentPage }: { products?: Product[], currentPage: number, setCurrentPage: (page: number) => void }) {
   const productsPerPage = 6;
-  const pagesVisited = pageNumber * productsPerPage;
+  const pagesVisited = currentPage * productsPerPage;
 
   const displayProducts = products.slice(pagesVisited, pagesVisited + productsPerPage).map((product) => (
     <li key={product.id} className="product-card">
@@ -27,12 +26,6 @@ export default function ProductList({ products = [] }: { products?: Product[] })
 
   const pageCount = Math.ceil(products.length / productsPerPage);
 
-  const changePage = (selected: number) => {
-    if (selected >= 0 && selected < pageCount) {
-      setPageNumber(selected);
-    }
-  };
-
   return (
     <div className="product-list-container">
       <ul className="product-list">{displayProducts}</ul>
@@ -40,8 +33,8 @@ export default function ProductList({ products = [] }: { products?: Product[] })
         {[...Array(pageCount)].map((_, index) => (
           <button 
             key={index} 
-            onClick={() => changePage(index)} 
-            className={pageNumber === index ? "active" : ""}
+            onClick={() => setCurrentPage(index)} 
+            className={currentPage === index ? "active" : ""}
           >
             {index + 1}
           </button>

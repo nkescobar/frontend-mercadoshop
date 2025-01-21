@@ -1,16 +1,14 @@
-/* Estilos para el contenedor principal */
 .home-container {
     min-height: 100vh;
-    background-color: #f3f4f6; /* bg-gray-100 */
+    background-color: #f3f4f6; 
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  /* Estilos para el header */
   .header {
     width: 100%;
-    background-color: #2563eb; /* bg-blue-600 */
+    background-color: #2563eb; 
     padding: 1rem 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -31,7 +29,6 @@
     cursor: pointer;
   }
   
-  /* Estilos para el input y botón de búsqueda */
   .search-input {
     padding: 0.5rem;
     border-radius: 8px;
@@ -45,7 +42,7 @@
   }
   
   .search-button {
-    background-color: #facc15; /* bg-yellow-400 */
+    background-color: #facc15;
     color: #1f2937;
     font-weight: bold;
     padding: 0.5rem 1rem;
@@ -56,10 +53,9 @@
   }
   
   .search-button:hover {
-    background-color: #fbbf24; /* hover:bg-yellow-500 */
+    background-color: #fbbf24; 
   }
   
-  /* Estilos para el contenido principal */
   .main-content {
     display: flex;
     flex-direction: column;
@@ -73,7 +69,6 @@
     text-align: center;
   }
   
-  /* Estilos para el footer */
   .footer {
     width: 100%;
     background-color: #1f2937;
