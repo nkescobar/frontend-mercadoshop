@@ -1,3 +1,16 @@
+# Mercado Shop
+
+Este proyecto es una aplicación web creada con **Next.js**, que permite a los usuarios buscar productos a través de una interfaz sencilla e intuitiva. La aplicación incluye una búsqueda en tiempo real con sugerencias, paginación y visualización de detalles de productos.
+
+## 🚀 Características
+
+- 🔍 **Búsqueda de productos en tiempo real** con sugerencias a medida que escribes.
+- 📄 **Vista de lista de productos** con paginación.
+- 🛒 **Vista de detalles de productos**, que muestra información detallada.
+- ⚡ **Interfaz rápida y responsiva**, optimizada para todos los dispositivos.
+- 🎯 **Mock de productos** para pruebas sin necesidad de acceder a una API externa.
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
