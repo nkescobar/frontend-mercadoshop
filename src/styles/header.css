@@ -1,11 +1,11 @@
 .header {
-    width: 100%;
-    background-color: var(--primary-color);
-    padding: 1rem 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Contenedor del logo y título */
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del logo y título */
 .header-logo-title {
   display: flex;
   align-items: center;
@@ -14,49 +14,93 @@
 
 .header-logo {
   margin-right: 10px;
-  width: 50px;
+  width: 100px;
   height: auto;
   border-radius: 50%;
 }
 
+.header-content {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+.header-title {
+  color: var(--color-gray50);
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 300px;
+}
+
+/* Contenedor del buscador con diseño flexible */
+.search-container {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 600px;  /* Limita el ancho máximo para evitar desbordes */
+}
+
+/* Ajustes del campo de búsqueda */
+.search-input {
+  flex: 2;
+  padding: 0.75rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box; /* Asegura que no se salga del contenedor */
+}
+
+/* Botón de búsqueda */
+.search-button {
+  background-color: var(--complementary-color);
+  color: var(--primary-color-600);
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap; /* Evita que el texto se desborde en móviles */
+}
+
+/* Cambiar color del botón al pasar el mouse */
+.search-button:hover {
+  background-color: var(--complementary-color-400);
+}
+
+/* Diseño responsivo para dispositivos móviles */
+@media (max-width: 768px) {
   .header-content {
-    max-width: 1024px;
-    margin: 0 auto;
-    display: flex;
+    flex-direction: column; /* Acomoda los elementos en columna */
     align-items: center;
-    justify-content: space-between;
-    padding: 0 1.5rem;
   }
-  
+
   .header-title {
-    color: var(--color-gray50);
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
+    width: auto;
+    font-size: 1.2rem;
+    text-align: center;
   }
-  
+
   .search-container {
-    display: flex;
-    gap: 0.5rem;
+    flex-direction: column; /* Input y botón en columna */
+    width: 100%;
+    max-width: 90%;
+    margin-top: 10px;
   }
-  
+
   .search-input {
-    padding: 0.5rem;
-    border-radius: 8px;
-    border: 1px solid var(--gray-400);
+    font-size: 1rem;
+    width: 100%;
   }
-  
+
   .search-button {
-    background-color: var(--complementary-color);
-    color: var(--primary-color-600);
-    font-weight: bold;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
   }
-  
-  .search-button:hover {
-    background-color: var(--complementary-color-400);
-  }
-  
+}

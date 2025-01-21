@@ -1,21 +1,84 @@
 {
-    "items": [
-      {
-        "id": "MLA1",
-        "title": "Producto simulado 1",
-        "price": { "currency": "COP", "amount": 1000, "decimals": 0 },
-        "picture": "/images/mock-product-1.jpg",
-        "condition": "new",
-        "free_shipping": true
-      },
-      {
-        "id": "MLA2",
-        "title": "Producto simulado 2",
-        "price": { "currency": "COP", "amount": 2000, "decimals": 0 },
-        "picture": "/images/mock-product-2.jpg",
-        "condition": "used",
-        "free_shipping": false
-      }
-    ]
-  }
-  
+  "items": [
+    {
+      "id": "MLA1",
+      "title": "Camara",
+      "price": { "currency": "COP", "amount": 15000, "decimals": 0 },
+      "picture": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "condition": "new",
+      "free_shipping": true
+    },
+    {
+      "id": "MLA2",
+      "title": "Zapatos sport",
+      "price": { "currency": "COP", "amount": 20000, "decimals": 0 },
+      "picture": "https://img.freepik.com/psd-gratis/venta-zapatos-publicacion-redes-sociales-o-diseno-plantilla-banner-cuadrado_505751-3772.jpg?t=st=1737424257~exp=1737427857~hmac=0c1fc76daaacc6d7bf8b0af7fd39be2ecf45cc62dac5212f4bedc93a9129459d&w=1060",
+      "condition": "used",
+      "free_shipping": false
+    },
+    {
+      "id": "MLA3",
+      "title": "Audifonos",
+      "price": { "currency": "COP", "amount": 30000, "decimals": 0 },
+      "picture": "https://img.freepik.com/vector-premium/producto-marca-aural-delight-headphone-social-media-post-dispositivos-promocion-diseno-volante_812236-3421.jpg?w=826",
+      "condition": "new",
+      "free_shipping": true
+    },
+    {
+      "id": "MLA4",
+      "title": "Zapatos tenis",
+      "price": { "currency": "COP", "amount": 18000, "decimals": 0 },
+      "picture": "https://img.freepik.com/psd-gratis/plantilla-banner-redes-sociales-super-venta-viernes-negro_106176-1479.jpg?t=st=1737424448~exp=1737428048~hmac=144d004258e0311a2f786c3444352c85d771ebed03a250c31de3bf8b010526f3&w=1060",
+      "condition": "used",
+      "free_shipping": false
+    },
+    {
+      "id": "MLA5",
+      "title": "Reloj",
+      "price": { "currency": "COP", "amount": 25000, "decimals": 0 },
+      "picture": "https://img.freepik.com/psd-gratis/plantilla-banner-redes-sociales-super-venta-viernes-negro_106176-1471.jpg?t=st=1737424563~exp=1737428163~hmac=d59c0a1efcbe7030eea7f98078a5daaa2c7661909f3d51a33d5d3b1856cf3457&w=1060",
+      "condition": "new",
+      "free_shipping": true
+    },
+    {
+      "id": "MLA6",
+      "title": "Laptop Apple",
+      "price": { "currency": "COP", "amount": 22000, "decimals": 0 },
+      "picture": "https://images.pexels.com/photos/12935036/pexels-photo-12935036.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "condition": "used",
+      "free_shipping": false
+    },
+    {
+      "id": "MLA7",
+      "title": "Laptop Dell",
+      "price": { "currency": "COP", "amount": 27000, "decimals": 0 },
+      "picture": "https://images.pexels.com/photos/8946995/pexels-photo-8946995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "condition": "new",
+      "free_shipping": true
+    },
+    {
+      "id": "MLA8",
+      "title": "Ipad",
+      "price": { "currency": "COP", "amount": 19000, "decimals": 0 },
+      "picture": "https://images.pexels.com/photos/4065885/pexels-photo-4065885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "condition": "used",
+      "free_shipping": false
+    },
+    {
+      "id": "MLA9",
+      "title": "Laptop Asus",
+      "price": { "currency": "COP", "amount": 40000, "decimals": 0 },
+      "picture": "https://images.pexels.com/photos/8534387/pexels-photo-8534387.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "condition": "new",
+      "free_shipping": true
+    },
+    {
+      "id": "MLA10",
+      "title": "Laptop Lenovo",
+      "price": { "currency": "COP", "amount": 45000, "decimals": 0 },
+      "picture": "https://images.pexels.com/photos/6446709/pexels-photo-6446709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "condition": "used",
+      "free_shipping": false
+    }
+  ]
+}
