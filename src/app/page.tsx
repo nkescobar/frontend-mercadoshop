@@ -20,10 +20,10 @@ export default function HomePage() {
   }, []);
 
   const handleSearch = (query: string) => {
-    setCurrentPage(0);  // Reiniciar la paginación al realizar la búsqueda
+    setCurrentPage(0);
 
     if (query.trim() === '') {
-      setFilteredProducts(products); // Mostrar todos los productos si el input está vacío
+      setFilteredProducts(products);
       return;
     }
 
@@ -40,7 +40,7 @@ export default function HomePage() {
   return (
     <div className="home-container">
       <Header products={products} onSearch={handleSearch} />
-      <h2 className="main-title">Bienvenido a Mercado Search</h2>
+      <h2 className="main-title">Bienvenido a Mercado Shop</h2>
       <p className="main-text">
         Encuentra los mejores productos con nuestra búsqueda fácil y rápida.
       </p>

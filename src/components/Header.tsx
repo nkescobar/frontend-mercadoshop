@@ -48,7 +48,7 @@ export default function Header({
       <div className="header-content">
         <div className="header-logo-title" onClick={() => router.push('/')}>
           <Image src={logo.src} alt="Logo" width={50} height={50} className="header-logo" />
-          <h1 className="header-title">Mercado Shop</h1>
+          <h1 className="header-title">Shop</h1>
         </div>
         <div className="search-container">
           <input
